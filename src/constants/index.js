@@ -157,24 +157,24 @@ export const footerLinks = [
 
 export const socialMedia = [
   {
-    id: "social-media-1",
+    id: "instagram",
     icon: instagram,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/bryanrsuarezb/",
   },
   {
-    id: "social-media-2",
+    id: "facebook",
     icon: facebook,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/bryanrsuarezb",
   },
   {
-    id: "social-media-3",
+    id: "twitter",
     icon: twitter,
-    link: "https://www.twitter.com/",
+    link: "https://github.com/bryansuarezdev",
   },
   {
-    id: "social-media-4",
+    id: "linkedin",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/bryansuarez1989/",
   },
 ]
 
