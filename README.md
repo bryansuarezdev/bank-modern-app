@@ -177,7 +177,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 ## 👨‍💻 Autor
 
 **Tu Nombre**
-- GitHub: [@TU_USUARIO](https://github.com/bryansuarezdev)
+- GitHub: [@bryansuarezdev](https://github.com/bryansuarezdev)
 - LinkedIn: [Tu LinkedIn](https://www.linkedin.com/in/bryansuarez1989/)
 
 ## 🙏 Agradecimientos
