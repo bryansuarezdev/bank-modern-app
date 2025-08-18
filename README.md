@@ -33,7 +33,7 @@ Una aplicación bancaria moderna y elegante construida con React, Tailwind CSS y
 
 ## 🚀 Instalación
 
-### Prerrequisitos
+### Pre-requisitos
 - Node.js (versión 16 o superior)
 - npm o yarn
 
@@ -179,13 +179,9 @@ npm run lint         # Ejecuta ESLint
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
 ## 👨‍💻 Autor
 
-**Tu Nombre**
+**Bryan Suarez**
 - GitHub: [@bryansuarezdev](https://github.com/bryansuarezdev)
 - LinkedIn: [Tu LinkedIn](https://www.linkedin.com/in/bryansuarez1989/)
 
