@@ -33,7 +33,11 @@ Una aplicación bancaria moderna y elegante construida con React, Tailwind CSS y
 
 ## 🚀 Instalación
 
+<<<<<<< HEAD
 ### Prer-requisitos
+=======
+### Pre-requisitos
+>>>>>>> fa59ddb72639d833f6a568155ddbb2ccd0099419
 - Node.js (versión 16 o superior)
 - npm o yarn
 
