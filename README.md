@@ -33,11 +33,7 @@ Una aplicación bancaria moderna y elegante construida con React, Tailwind CSS y
 
 ## 🚀 Instalación
 
-<<<<<<< HEAD
-### Prer-requisitos
-=======
 ### Pre-requisitos
->>>>>>> fa59ddb72639d833f6a568155ddbb2ccd0099419
 - Node.js (versión 16 o superior)
 - npm o yarn
 
@@ -202,6 +198,17 @@ npm run lint         # Ejecuta ESLint
 
 - 📧 Email: bryan.end.dev@gmail.com
 - 🐛 Issues: [GitHub Issues](https://github.com/bryansuarezdev/bank-modern-app/issues)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
+
+**Licencia MIT:**
+- ✅ **Permite**: Uso comercial, modificación, distribución, uso privado
+- ✅ **Requiere**: Inclusión de la licencia y copyright
+- ❌ **No permite**: Responsabilidad del autor
 
 ---
 
