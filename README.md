@@ -167,7 +167,6 @@ Este proyecto nació mientras seguía el tutorial **[Build and Deploy a Fully Re
 <p align="left">
   <strong>Bryan Suárez</strong><br>
   <em>Full-Stack Developer & Digital Operations Specialist</em><br>
-  Coquimbo, Chile
 </p>
 
 <p align="left">
