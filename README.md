@@ -7,6 +7,12 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.3-06b6d4?logo=tailwindcss&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-8.3-646cff?logo=vite&logoColor=white)
 
+## 🙏 Agradecimiento principal
+
+Este proyecto nació mientras seguía el tutorial **[Build and Deploy a Fully Responsive Website with Modern UI/UX in React JS with Tailwind](https://www.youtube.com/watch?v=_oO4Qi5aVZs)** de [JavaScript Mastery](https://www.youtube.com/@javascriptmastery), creado por [Adrian Hajdin](https://jsmastery.com/knowledge-base/understanding-the-weird-parts-and-behaviors-of-javascript).
+
+**Gracias, Adrian, por compartir el proyecto y explicarlo paso a paso.** Construí la versión inicial acompañando el video y fui practicando React durante todo el proceso. La estructura visual y los componentes originales se basan en su tutorial; este repositorio documenta ese aprendizaje y las ampliaciones que hice después.
+
 > **Proyecto demostrativo:** no es un banco, no crea cuentas y no procesa pagos. Las cifras, reseñas y marcas se usan como contenido de ejemplo para mostrar el diseño.
 
 ## ✨ Qué puedes explorar
@@ -72,7 +78,7 @@ scripts/
 
 ## 💡 Origen y aprendizaje
 
-Comencé este proyecto siguiendo un video de YouTube para practicar React. Después lo amplié como muestra de portafolio: añadí navegación real, páginas informativas, un tema de color propio y comprobaciones de rutas. Me sirvió para trabajar con componentes reutilizables, estado, diseño adaptable y herramientas de build.
+Después de completar la versión guiada por el tutorial, amplié el proyecto como muestra de portafolio: añadí navegación real, páginas informativas, un tema de color propio y comprobaciones de rutas. Me sirvió para seguir trabajando con componentes reutilizables, estado, diseño adaptable y herramientas de build.
 
 ## 👨‍💻 Autor
 
