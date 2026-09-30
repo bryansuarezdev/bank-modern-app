@@ -20,22 +20,34 @@ Diseñada con un enfoque centrado en UX/UI premium, arquitectura modular de comp
   <img src="https://img.shields.io/badge/ESLint_10-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint 10" />
 </p>
 
+🔗 **Demo en vivo:** [https://portfolio-test-b-modern-app.vercel.app](https://portfolio-test-b-modern-app.vercel.app/)  
+📁 **Repositorio:** [https://github.com/bryansuarezdev/bank-modern-app](https://github.com/bryansuarezdev/bank-modern-app)
+
 ---
 
 > ⚠️ **Nota aclaratoria:** Este es un **proyecto conceptual y demostrativo** con fines de portafolio y aprendizaje. No es una entidad bancaria real, no solicita credenciales, no crea cuentas ni procesa pagos o transacciones reales. Todas las marcas, testimonios y métricas son ficticios y puramente ilustrativos.
 
 ---
 
+## 📸 Vista Previa
+
+<p align="center">
+  <img src="./screenshots/preview.png" alt="Vista previa de Bank Modern App" width="100%" />
+</p>
+
+---
+
 ## 📋 Tabla de Contenidos
 
-1. [Sobre el Proyecto](#-sobre-el-proyecto)
-2. [✨ Características Principales](#-características-principales)
-3. [🛠️ Stack Tecnológico](#️-stack-tecnológico)
-4. [📁 Estructura del Proyecto](#-estructura-del-proyecto)
-5. [🚀 Ejecución Local](#-ejecución-local)
-6. [🧪 Scripts y Comprobaciones](#-scripts-y-comprobaciones)
-7. [🙏 Agradecimiento y Aprendizaje](#-agradecimiento-y-aprendizaje)
-8. [👨‍💻 Autor](#-autor)
+1. [📸 Vista Previa](#-vista-previa)
+2. [💡 Sobre el Proyecto](#-sobre-el-proyecto)
+3. [✨ Características Principales](#-características-principales)
+4. [🛠️ Stack Tecnológico](#️-stack-tecnológico)
+5. [📁 Estructura del Proyecto](#-estructura-del-proyecto)
+6. [🚀 Ejecución Local](#-ejecución-local)
+7. [🧪 Scripts y Comprobaciones](#-scripts-y-comprobaciones)
+8. [🙏 Agradecimiento y Aprendizaje](#-agradecimiento-y-aprendizaje)
+9. [👨‍💻 Autor](#-autor)
 
 ---
 
