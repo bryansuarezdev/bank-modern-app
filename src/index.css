@@ -1,15 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0b1224;
+  --color-secondary: #67e8cf;
+  --color-accent: #a78bfa;
+  --color-dimWhite: rgba(234, 242, 255, 0.76);
+  --color-dimBlue: rgba(103, 232, 207, 0.12);
+  --font-poppins: Poppins, sans-serif;
+
+  --breakpoint-xs: 30rem;
+  --breakpoint-ss: 38.75rem;
+  --breakpoint-sm: 48rem;
+  --breakpoint-md: 66.25rem;
+  --breakpoint-lg: 75rem;
+  --breakpoint-xl: 106.25rem;
+}
 
 :root {
   --black-gradient: linear-gradient(
     144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
+    #a78bfa -278.56%,
+    #344668 -78.47%,
+    #17213a 91.61%
   );
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
@@ -21,12 +35,11 @@
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
+    #d5fff4 0.89%,
+    #a9f5df 17.23%,
+    #67e8cf 42.04%,
+    #92cbef 71.54%,
+    #a78bfa 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -37,30 +50,29 @@
 .bg-blue-gradient {
   background: linear-gradient(
     157.81deg,
-    #def9fa -43.27%,
-    #bef3f5 -21.24%,
-    #9dedf0 12.19%,
-    #7de7eb 29.82%,
-    #5ce1e6 51.94%,
-    #33bbcf 90.29%
+    #d5fff4 -43.27%,
+    #a9f5df -21.24%,
+    #67e8cf 12.19%,
+    #86cfdd 51.94%,
+    #a78bfa 90.29%
   );
 }
 
 .bg-black-gradient {
   background: linear-gradient(
     144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
+    #a78bfa -278.56%,
+    #344668 -78.47%,
+    #17213a 91.61%
   );
 }
 
 .bg-black-gradient-2 {
   background: linear-gradient(
     -168.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
+    #a78bfa -278.56%,
+    #344668 -78.47%,
+    #17213a 91.61%
   );
 }
 
@@ -68,12 +80,12 @@
   background: linear-gradient(
     153.47deg,
     rgba(255, 255, 255, 0) -341.94%,
-    #14101d 95.11%
+    #17213a 95.11%
   );
 }
 
 .bg-discount-gradient {
-  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+  background: linear-gradient(125.17deg, #243351 0%, #17213a 100%);
 }
 
 .box-shadow {
@@ -125,16 +137,16 @@
 }
 
 .blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  background: linear-gradient(180deg, rgba(103, 232, 207, 0) 0%, #2c6e91 100%);
   filter: blur(123px);
 }
 
 .pink__gradient {
-  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  background: linear-gradient(90deg, #a78bfa 0%, #7254c5 100%);
   filter: blur(900px);
 }
 
 .white__gradient {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(174, 255, 226, 0.35);
   filter: blur(750px);
 }

@@ -3,19 +3,19 @@ import { people01, people02, people03, facebook, instagram,
 
 export const navLinks = [
   {
-    id: "home",
+    path: "/",
     title: "Home",
   },
   {
-    id: "features",
+    path: "/features",
     title: "Features",
   },
   {
-    id: "product",
+    path: "/product",
     title: "Product",
   },
   {
-    id: "clients",
+    path: "/clients",
     title: "Clients",
   },
 ]

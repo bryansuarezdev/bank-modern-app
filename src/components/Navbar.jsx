@@ -1,59 +1,61 @@
 import { useState } from "react"
+import { Link, NavLink } from "react-router"
 import { logo, close, menu } from "../assets"
 import { navLinks } from "../constants"
 
 const Navbar = () => {
-  const [active, setActive] = useState("Home")
-  const [toggle, setToggle] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="hoobank" className="w-[124px] h-[32px]"/>
+    <nav className="relative z-20 flex w-full items-center justify-between py-6" aria-label="Main navigation">
+      <Link to="/" onClick={() => setMenuOpen(false)} aria-label="HooBank home">
+        <img src={logo} alt="HooBank" className="h-[32px] w-[124px]" />
+      </Link>
 
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {navLinks.map((nav, index) => (
-          <li
-            key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px]
-               ${active === nav.title ? "text-white" : "text-dimWhite"}
-               ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10' }`}
-               onClick={() => setActive(nav.title)}
+      <ul className="hidden flex-1 items-center justify-end gap-10 sm:flex">
+        {navLinks.map((nav) => (
+          <li key={nav.path}>
+            <NavLink
+              to={nav.path}
+              end
+              className={({ isActive }) => `border-b-2 pb-2 font-poppins text-[16px] transition-colors ${
+                isActive ? "border-secondary text-secondary" : "border-transparent text-dimWhite hover:text-white"
+              }`}
             >
-              <a href={`#${nav.id}`}>
-                {nav.title}
-              </a>
+              {nav.title}
+            </NavLink>
           </li>
         ))}
       </ul>
 
-      <div className="sm:hidden flex flex-1 justify-end items-center">
-        <img
-          src={toggle ? close : menu}
-          alt="menu"
-          className="w-[28px] h-[28px] object-contain"
-          onClick={() => setToggle((prev) => !prev)}
+      <div className="sm:hidden">
+        <button
+          type="button"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-navigation"
+          className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/15"
+          onClick={() => setMenuOpen((open) => !open)}
         >
-        </img>
+          <img src={menuOpen ? close : menu} alt="" className="h-7 w-7 object-contain" />
+        </button>
 
-        <div
-          className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient
-          absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-x1 sidebar`}>
-            <ul className="list-none flex flex-col justify-end items-center flex-1">
-              {navLinks.map((nav, index) => (
-               <li
-                 key={nav.id}
-                 className={`font-poppins font-normal cursor-pointer text-[16px]
-                  ${active === nav.title ? "text-white" : "text-dimWhite"}
-                  ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4' }`}
-                  onClick={() => setActive(nav.title)}
+        <ul id="mobile-navigation" className={`${menuOpen ? 'flex' : 'hidden'} absolute right-0 top-[76px] min-w-[190px] flex-col gap-1 rounded-2xl border border-white/10 bg-[#17213a] p-3 shadow-2xl`}>
+            {navLinks.map((nav) => (
+              <li key={nav.path}>
+                <NavLink
+                  to={nav.path}
+                  end
+                  onClick={() => setMenuOpen(false)}
+                  className={({ isActive }) => `block rounded-lg px-4 py-3 font-poppins text-[16px] ${
+                    isActive ? "bg-secondary/15 text-secondary" : "text-dimWhite hover:bg-white/10 hover:text-white"
+                  }`}
                 >
-                 <a href={`#${nav.id}`}>
                   {nav.title}
-                 </a>
-                </li>
-               ))}
-            </ul>
-        </div>
+                </NavLink>
+              </li>
+            ))}
+        </ul>
       </div>
     </nav>
   )
