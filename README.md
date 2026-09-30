@@ -2,7 +2,7 @@
 
 Una aplicación bancaria moderna y elegante construida con React, Tailwind CSS y Vite. Diseñada para ofrecer una experiencia de usuario excepcional con un diseño responsive y componentes reutilizables.
 
-![Bank Modern App](https://img.shields.io/badge/React-18.0.0-blue?style=for-the-badge&logo=react)
+![Bank Modern App](https://img.shields.io/badge/React-19.1.0-blue?style=for-the-badge&logo=react)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0.0-38B2AC?style=for-the-badge&logo=tailwind-css)
 ![Vite](https://img.shields.io/badge/Vite-4.0.0-646CFF?style=for-the-badge&logo=vite)
 
