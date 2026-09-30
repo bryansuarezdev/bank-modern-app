@@ -1,5 +1,5 @@
-import { people01, people02, people03, facebook, instagram, 
-  linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets"
+import { people01, people02, people03, facebook, instagram,
+  linkedin, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets"
 
 export const navLinks = [
   {
@@ -95,23 +95,23 @@ export const footerLinks = [
     links: [
       {
         name: "Content",
-        link: "https://www.hoobank.com/content/",
+        slug: "content",
       },
       {
         name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        slug: "how-it-works",
       },
       {
         name: "Create",
-        link: "https://www.hoobank.com/create/",
+        slug: "create",
       },
       {
         name: "Explore",
-        link: "https://www.hoobank.com/explore/",
+        slug: "explore",
       },
       {
         name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        slug: "terms-and-services",
       },
     ],
   },
@@ -120,23 +120,23 @@ export const footerLinks = [
     links: [
       {
         name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        slug: "help-center",
       },
       {
         name: "Partners",
-        link: "https://www.hoobank.com/partners/",
+        slug: "partners",
       },
       {
         name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        slug: "suggestions",
       },
       {
         name: "Blog",
-        link: "https://www.hoobank.com/blog/",
+        slug: "blog",
       },
       {
         name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        slug: "newsletters",
       },
     ],
   },
@@ -145,11 +145,11 @@ export const footerLinks = [
     links: [
       {
         name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        slug: "our-partner",
       },
       {
         name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        slug: "become-a-partner",
       },
     ],
   },
@@ -167,8 +167,8 @@ export const socialMedia = [
     link: "https://www.facebook.com/bryanrsuarezb",
   },
   {
-    id: "twitter",
-    icon: twitter,
+    id: "GitHub",
+    icon: null,
     link: "https://github.com/bryansuarezdev",
   },
   {

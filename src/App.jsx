@@ -1,7 +1,8 @@
 import { useEffect } from 'react'
-import { Link, Route, Routes, useLocation } from 'react-router'
+import { Link, Route, Routes, useLocation, useParams } from 'react-router'
 import styles from './style'
 import { navLinks } from './constants'
+import { infoPages } from './constants/infoPages'
 import { Navbar, Hero, Stats, Business, Billing, CardDeal,
   Testimonials, Clients, CTA, Footer } from './components'
 
@@ -16,7 +17,9 @@ const PageEffects = () => {
   const { pathname } = useLocation()
 
   useEffect(() => {
-    document.title = `${pageDetails[pathname]?.title ?? 'Page not found'} | Bank Modern App`
+    const infoSlug = pathname.startsWith('/info/') ? pathname.slice('/info/'.length) : null
+    const title = pageDetails[pathname]?.title ?? infoPages[infoSlug]?.title ?? 'Page not found'
+    document.title = `${title} | Bank Modern App`
     window.scrollTo(0, 0)
   }, [pathname])
 
@@ -96,6 +99,38 @@ const NotFoundPage = () => (
   </div>
 )
 
+const InfoPage = () => {
+  const { slug } = useParams()
+  const page = infoPages[slug]
+
+  if (!page) return <NotFoundPage />
+
+  return (
+    <>
+      <PageIntro eyebrow={page.eyebrow} title={page.title} description={page.summary} />
+      <section className="py-14 sm:py-20" aria-label={`${page.title} details`}>
+        <div className="grid gap-5 md:grid-cols-2">
+          {page.sections.map((section) => (
+            <article key={section.title} className="rounded-[22px] border border-white/10 bg-[#17213a] p-7 sm:p-9">
+              <h2 className="font-poppins text-2xl font-semibold text-white">{section.title}</h2>
+              <p className="mt-4 font-poppins leading-8 text-dimWhite">{section.text}</p>
+            </article>
+          ))}
+        </div>
+        {page.action.href ? (
+          <a href={page.action.href} className="mt-10 inline-block rounded-xl bg-blue-gradient px-6 py-4 font-poppins font-medium text-primary focus-visible:outline-2 focus-visible:outline-secondary">
+            {page.action.label}
+          </a>
+        ) : (
+          <Link to={page.action.to} className="mt-10 inline-block rounded-xl bg-blue-gradient px-6 py-4 font-poppins font-medium text-primary focus-visible:outline-2 focus-visible:outline-secondary">
+            {page.action.label}
+          </Link>
+        )}
+      </section>
+    </>
+  )
+}
+
 const App = () => (
   <div className="min-h-screen overflow-hidden bg-primary">
     <PageEffects />
@@ -109,6 +144,7 @@ const App = () => (
           <Route path="/features" element={<FeaturesPage />} />
           <Route path="/product" element={<ProductPage />} />
           <Route path="/clients" element={<ClientsPage />} />
+          <Route path="/info/:slug" element={<InfoPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>

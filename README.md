@@ -1,45 +1,79 @@
-# Bank Modern App
+# 🏦 Bank Modern App
 
-Landing page bancaria construida con React 19, Tailwind CSS 4 y Vite 8. Es una interfaz de demostración; no procesa operaciones bancarias.
+**Una interfaz bancaria conceptual que construí para aprender React y que hoy forma parte de mi portafolio.**
 
-## Requisitos
+![React](https://img.shields.io/badge/React-19.3-149eca?logo=react&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-7.18-ca4245?logo=reactrouter&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.3-06b6d4?logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-8.3-646cff?logo=vite&logoColor=white)
 
-- Node.js 20.19+, 22.13+ o 24+ (versiones pares compatibles)
-- npm
+> **Proyecto demostrativo:** no es un banco, no crea cuentas y no procesa pagos. Las cifras, reseñas y marcas se usan como contenido de ejemplo para mostrar el diseño.
 
-## Desarrollo
+## ✨ Qué puedes explorar
+
+- **Inicio:** presentación del concepto y accesos a las secciones principales.
+- **Funciones:** tarjetas que muestran ideas de recompensas, seguridad y transferencias.
+- **Producto:** diseños de facturación y tarjetas.
+- **Clientes:** testimonios y logotipos de muestra.
+- **Pie de página:** 12 enlaces con páginas informativas propias, entre ellas How it Works, Help Center, Blog y Terms & Services.
+
+El menú funciona en escritorio y móvil, indica la página activa y permite usar los botones Atrás y Adelante del navegador. Las rutas usan `#` para que el sitio pueda publicarse como archivos estáticos sin configurar redirecciones.
+
+## 🧰 Tecnologías
+
+| Tecnología | Uso |
+| --- | --- |
+| React 19 | Componentes, propiedades y estado del menú móvil |
+| React Router 7 | Navegación entre páginas y rutas informativas |
+| Tailwind CSS 4 | Diseño adaptable, utilidades y colores personalizados |
+| Vite 8 | Servidor de desarrollo y build de producción |
+| JavaScript (ES modules) | Lógica de la aplicación |
+| ESLint 10 | Revisión estática del código |
+
+La paleta azul noche, menta y violeta y los puntos de quiebre están definidos en [`src/index.css`](src/index.css).
+
+## 🚀 Ejecutarlo localmente
+
+Necesitas npm y una versión compatible de Node.js: **20.19+, 22.13+ o 24+** dentro de las ramas pares correspondientes.
 
 ```bash
+git clone https://github.com/bryansuarezdev/bank-modern-app.git
+cd bank-modern-app
 npm ci
 npm run dev
 ```
 
-Abre la dirección que muestra Vite (normalmente `http://localhost:5173`).
+Abre la URL que muestra Vite, normalmente `http://localhost:5173`. Por ejemplo, la página de Funciones estará en `http://localhost:5173/#/features`.
 
-## Verificación y producción
+## ✅ Comprobaciones
 
 ```bash
-npm run lint
-npm run check:routes
-npm run build
-npm run preview
+npm run lint          # Revisa el código
+npm run check:routes  # Comprueba las 4 páginas principales y los 12 enlaces del pie
+npm run build         # Genera dist/
+npm run preview       # Sirve el build localmente
 ```
 
-El build queda en `dist/`. Se puede publicar como sitio estático en Vercel, Netlify o un servidor similar.
+El contenido de `dist/` puede publicarse en un alojamiento de sitios estáticos.
 
-## Estilos
+## 📁 Organización
 
-La paleta azul noche, menta y violeta, la fuente Poppins y los puntos de quiebre personalizados están definidos en `src/index.css` mediante `@theme`. Tailwind se integra con Vite desde `vite.config.js`.
+```text
+src/
+├── assets/            # Imágenes e iconos
+├── components/        # Secciones y elementos compartidos
+├── constants/         # Datos de navegación y páginas informativas
+├── App.jsx            # Páginas y rutas
+├── index.css          # Tema y estilos globales
+└── main.jsx           # Entrada de React
+scripts/
+└── check-routes.mjs   # Comprobación de rutas y enlaces
+```
 
-El menú superior lleva a Inicio, Funciones, Producto y Clientes. La navegación usa rutas con `#` para funcionar también en alojamiento estático sin configurar redirecciones en el servidor.
+## 💡 Origen y aprendizaje
 
-## Estructura
+Comencé este proyecto siguiendo un video de YouTube para practicar React. Después lo amplié como muestra de portafolio: añadí navegación real, páginas informativas, un tema de color propio y comprobaciones de rutas. Me sirvió para trabajar con componentes reutilizables, estado, diseño adaptable y herramientas de build.
 
-- `src/components/`: secciones y componentes de la página.
-- `src/assets/`: imágenes e iconos.
-- `src/constants/`: datos de la página.
-- `src/style.js`: clases reutilizadas por los componentes.
+## 👨‍💻 Autor
 
-## Autor
-
-Bryan Suarez · [GitHub](https://github.com/bryansuarezdev) · [LinkedIn](https://www.linkedin.com/in/bryansuarez1989/)
+**Bryan Suarez** · [GitHub](https://github.com/bryansuarezdev) · [LinkedIn](https://www.linkedin.com/in/bryansuarez1989/)
